@@ -1,0 +1,14 @@
+[
+    {
+        "title": "I love HTML!",
+        "description": "I love creating webpages using HTML!"
+    },
+    {
+        "title": "I love CSS!",
+        "description": "I love designing webpages using CSS!"
+    },
+    {
+        "title": "I love JavaScript!",
+        "description": "I love designing the interactivity using JavaScript!"
+    }
+]
