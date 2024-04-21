@@ -1,0 +1,177 @@
+:root {
+    --primary: #E7D2CC;
+    --secondary: #868B8E;
+    --tertiary: #B9B7BD;
+    --quartinary: #EEEDE7;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+}
+
+.home {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    font-size: 70px;
+    color: var(--secondary);
+}
+
+.header-btns {
+    display: flex;
+}
+
+ul {
+    display: inline-flex;
+}
+
+a {
+    color: var(--tertiary);
+}
+
+.links {
+    font-weight: bold;
+    font-size: 34px;
+    margin: 30px 10px 30px 10px;
+}
+
+.login-btn, .logout-btn {
+    background-color: var(--primary);
+    border: none;
+    padding: 10px;
+    color: var(--tertiary);
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.login-btn:hover, a:hover, .logout-btn:hover, .login-button:hover, .signup-button:hover {
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+body {
+    background-color: var(--quartinary);
+}
+
+/* Blogpost CSS */
+
+.display-blogpost {
+    display: grid;
+    border: solid;
+    border-radius: 20px;
+    border-color: var(--secondary);
+    margin: 20px;;
+}
+
+h2 {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 17px 17px 0 0;
+    font-size: 32px;
+    padding: 10px;
+}
+
+p {
+    border-radius: 17px 17px 0 0;
+}
+/* Login and Sign Up CSS */
+
+.login, .signup {
+    display: grid;
+    justify-content: center;
+}
+
+.login-form, .signup-form {
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--secondary);
+    border-radius: 20px;
+    background-color: var(--quartinary);
+    padding: 30px;
+    margin: 50px;
+}
+
+h3 {
+    font-size: 64px;
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    
+}
+
+h4 {
+    font-size: 32px;
+    color: var(--secondary);
+    padding-bottom: 5px;
+}
+
+.username, .password, .account-management, .email {
+    padding: 20px;
+}
+
+.username-text, .password-text, .email-text {
+    height: 40px;
+    width: 300px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.account-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset, .signup {
+    color: black;
+}
+
+.reset:hover, .signup:hover {
+    color: var(--secondary);
+}
+
+.account-management {
+    display: grid;
+}
+
+.username, .password, .account-management, .email {
+    padding: 20px;
+}
+
+.username-text, .password-text, .email-text {
+    height: 40px;
+    width: 300px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.login-button, .signup-button {
+    height: 50px;
+    background-color: var(--primary);
+    color: var(--tertiary);
+    font-size: 26px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 5px 5px var(--secondary);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+
