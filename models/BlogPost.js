@@ -19,7 +19,7 @@ BlogPost.init(
             type: DataTypes.STRING,
         },
         date_created: {
-            type: DataTypes.STRING,
+            type: DataTypes.DATE,
             allowNull: false,
             defaultValue: DataTypes.NOW,
         },
