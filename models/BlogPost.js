@@ -33,7 +33,7 @@ BlogPost.init(
     },
     {
         sequelize,
-        timestamps: true,
+        timestamps: false,
         freezeTableName: true,
         undersored: true,
         modelName: "blogpost"

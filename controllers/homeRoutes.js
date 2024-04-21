@@ -9,7 +9,10 @@ const { BlogPost } = require("../models");
 
 router.get("/", async (req, res,) => {
     try {
+        const blogPostData = await BlogPost.findAll();
+        const blogPosts = blogPostData.map((blogPost) => blogPost.get({ plain: true }));
         res.render("homepage", {
+            blogPosts,
             loggedIn: req.session.loggedIn,
         });
     } catch (err) {
@@ -24,7 +27,7 @@ router.get("/login", (req, res) => {
         res.redirect("/");
         return;
     }
-    res.render()
+    res.render("/login");
 })
 
 module.exports = router;

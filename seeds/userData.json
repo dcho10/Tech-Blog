@@ -4,11 +4,15 @@
         "password": "daviddavid"
     },
     {
-        "username": "David1",
-        "password": "david1david1"
+        "username": "KevinDurant",
+        "password": "TestPassword"
     },
     {
-        "username": "David2",
-        "password": "david2david2"
+        "username": "LeBronJames",
+        "password": "PasswordTesting1"
+    },
+    {
+        "username": "NikolaJokic",
+        "password": "AltPasswordTest"
     }
 ]

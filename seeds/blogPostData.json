@@ -1,14 +1,18 @@
 [
     {
-        "title": "I love HTML!",
+        "title": "I love working with HTML!",
         "description": "I love creating webpages using HTML!"
     },
     {
-        "title": "I love CSS!",
+        "title": "CSS is the best!",
         "description": "I love designing webpages using CSS!"
     },
     {
-        "title": "I love JavaScript!",
-        "description": "I love designing the interactivity using JavaScript!"
+        "title": "JavaScript is so much fun!",
+        "description": "I love the interactivity using JavaScript!"
+    },
+    {
+        "title": "I love coding!",
+        "description": "Coding is so much fun!"
     }
 ]
