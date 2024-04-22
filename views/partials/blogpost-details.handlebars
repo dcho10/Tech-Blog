@@ -6,10 +6,10 @@
     <section>
         <p class="content"> {{comment}} </p>
         {{#if loggedIn}}
-        <section class="blogpost-btns">
-            <button type="button" class="edit-btn"> Edit </button>
-            <button type="button" class="delete-btn"> Delete </button>
-        </section>
+            <section class="comment-section">
+                <textarea class="comment-text"></textarea>
+                <button type="button" class="add-comment-btn"> Add Comment </button>
+            </section>
         {{/if}}
     </section>
 </section>

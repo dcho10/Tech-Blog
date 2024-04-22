@@ -59,7 +59,7 @@ a {
     font-size: 34px;
 }
 
-.login-btn:hover, a:hover, .logout-btn:hover, .login-button:hover, .signup-button:hover, .edit-btn:hover, .delete-btn:hover, .new-post-btn:hover, .title:hover {
+.login-btn:hover, a:hover, .logout-btn:hover, .login-button:hover, .signup-button:hover, .edit-btn:hover, .delete-btn:hover, .new-post-btn:hover, .add-post-btn:hover, .add-comment-btn:hover {
     cursor: pointer;
     color: var(--secondary);
 }
@@ -86,7 +86,7 @@ body {
 }
 
 h2 {
-    font-family: "Bungee Shade", sans-serif;
+    font-family: "Press Start 2P", system-ui;
     font-size: 28px;
     color: black;
 }
@@ -100,7 +100,7 @@ h2 {
     justify-content: center;
 }
 
-.edit-btn, .delete-btn, .new-post-btn {
+.edit-btn, .delete-btn, .new-post-btn, .add-post-btn, .add-comment-btn {
     background-color: var(--primary);
     border-radius: 20px;
     border: none;
@@ -119,8 +119,19 @@ h2 {
 }
 
 .content {
-    font-size: 32px;
+    font-size: 24px;
 }
+
+.comment-section {
+    display: grid;
+}
+
+.comment-text {
+    height: 100px;
+    margin: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
 /* Login and Sign Up CSS */
 
 .login, .signup {
@@ -128,7 +139,7 @@ h2 {
     justify-content: center;
 }
 
-.login-form, .signup-form {
+.login-form, .signup-form, .create-post {
     border-style: solid;
     border-width: 10px;
     border-color: var(--secondary);
@@ -212,5 +223,28 @@ h4 {
     margin-top: 20px;
 }
 
+/* Dashboard CSS */
 
+.create-post {
+    display: grid;
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--secondary);
+    border-radius: 20px;
+    background-color: var(--quartinary);
+    padding: 30px;
+    margin: 50px;
+}
 
+.title-text {
+    height: 40px;
+    font-size: 24px;
+    color: black;
+    margin: 0 0 10px 0;
+}
+
+.post-text {
+    height: 250px;
+    margin: 10px 0 10px 0;
+    font-size: 20px;;
+}

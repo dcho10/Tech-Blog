@@ -27,11 +27,43 @@ router.get("/", async (req, res,) => {
 });
 
 router.get("/home", async (req, res) => {
-    res.render("homepage");
+    try {
+        const blogPostData = await BlogPost.findAll({
+            include: {
+                model: User,
+                attributes: ["username"]
+            }
+        });
+        const blogPosts = blogPostData.map((blogPost) => blogPost.get({ plain: true }));
+        res.render("homepage", {
+            blogPosts,
+            loggedIn: req.session.loggedIn,
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
 })
 
 router.get("/dashboard", async (req, res) => {
-    res.render("dashboard");
+    try {
+        if (!req.session.loggedIn) {
+            return res.redirect("/login");
+        }
+        const userId = req.session.user_id;
+        const blogPosts = await BlogPost.findAll({
+            where: { user_id: userId },
+            include: User
+        });
+        res.render("dashboard", { blogPosts });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
+
+router.get("/create", async (req, res) => {
+    res.render("create");
 })
 
 router.get("/signup", (req, res) => {
