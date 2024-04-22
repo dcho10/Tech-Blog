@@ -1,0 +1,15 @@
+<section class="display-blogpost">
+    <section class="title">
+        <h2> {{title}} </h2>
+        <p> Created by {{user.username}} on {{format_date date_created}} </p>
+    </section>
+    <section>
+        <p class="content"> {{comment}} </p>
+        {{#if loggedIn}}
+        <section class="blogpost-btns">
+            <button type="button" class="edit-btn"> Edit </button>
+            <button type="button" class="delete-btn"> Delete </button>
+        </section>
+        {{/if}}
+    </section>
+</section>

@@ -59,7 +59,7 @@ a {
     font-size: 34px;
 }
 
-.login-btn:hover, a:hover, .logout-btn:hover, .login-button:hover, .signup-button:hover {
+.login-btn:hover, a:hover, .logout-btn:hover, .login-button:hover, .signup-button:hover, .edit-btn:hover, .delete-btn:hover, .new-post-btn:hover, .title:hover {
     cursor: pointer;
     color: var(--secondary);
 }
@@ -73,28 +73,53 @@ body {
 .display-blogpost {
     display: grid;
     border: solid;
-    border-radius: 20px;
     border-color: var(--secondary);
     margin: 20px;;
 }
 
-h2 {
-    font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-    "MORF" 15,
-    "SHLN" 50;
+.title {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--primary);
     color: var(--secondary);
-    border-radius: 17px 17px 0 0;
-    font-size: 42px;
     padding: 10px;
 }
 
-p {
-    border-radius: 17px 17px 0 0;
+h2 {
+    font-family: "Bungee Shade", sans-serif;
+    font-size: 28px;
+    color: black;
+}
+
+.hide {
+    display: none;
+}
+
+.blogpost-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.edit-btn, .delete-btn, .new-post-btn {
+    background-color: var(--primary);
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    color: var(--tertiary);
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: 0px 5px 5px var(--secondary);
+}
+
+.new-post {
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+}
+
+.content {
+    font-size: 32px;
 }
 /* Login and Sign Up CSS */
 

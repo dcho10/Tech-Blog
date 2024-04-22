@@ -6,7 +6,7 @@
     <title>Tech Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bungee+Shade&family=Carter+One&family=Honk&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=Bungee+Shade&family=Carter+One&family=Honk&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -15,21 +15,22 @@
         <section class="header-btns">
             <section>
                 <ul>
+                  <li class="links"><a href="/home"> Home </a></li>
                   <li class="links"><a href="/dashboard"> Dashboard </a></li>
                 </ul>
             </section>
-            {{#if logged_in}}
+            {{#if loggedIn}}
             <button class="logout-btn" id="logout"> Logout </button>
             {{else}}
             <button class="login-btn" id="login" onclick="window.location.href='/login'"> Login </button>
             {{/if}}
         </section>
     </header>
-    <main class="display-blogpost">
+    <main>
         {{{ body }}}
     </main>
 
-  {{#if logged_in}}
+  {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>

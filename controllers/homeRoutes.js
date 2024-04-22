@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { BlogPost } = require("../models");
+const { User, BlogPost } = require("../models");
 
 // home should display blogposts
 // successful login will redirect to dashboard
@@ -9,7 +9,12 @@ const { BlogPost } = require("../models");
 
 router.get("/", async (req, res,) => {
     try {
-        const blogPostData = await BlogPost.findAll();
+        const blogPostData = await BlogPost.findAll({
+            include: {
+                model: User,
+                attributes: ["username"]
+            }
+        });
         const blogPosts = blogPostData.map((blogPost) => blogPost.get({ plain: true }));
         res.render("homepage", {
             blogPosts,
@@ -21,13 +26,24 @@ router.get("/", async (req, res,) => {
     }
 });
 
+router.get("/home", async (req, res) => {
+    res.render("homepage");
+})
+
+router.get("/dashboard", async (req, res) => {
+    res.render("dashboard");
+})
+
+router.get("/signup", (req, res) => {
+    res.render("signup");
+})
 
 router.get("/login", (req, res) => {
     if (req.session.loggedIn) {
         res.redirect("/");
         return;
     }
-    res.render("/login");
+    res.render("login");
 })
 
 module.exports = router;
