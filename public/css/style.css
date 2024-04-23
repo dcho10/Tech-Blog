@@ -85,6 +85,15 @@ body {
     padding: 10px;
 }
 
+.content {
+    font-size: 24px;
+    display: none;
+}
+
+.title:hover + .content {
+    display: block;
+}
+
 h2 {
     font-family: "Press Start 2P", system-ui;
     font-size: 28px;
@@ -118,6 +127,10 @@ h2 {
     align-items: bottom;
 }
 
+textarea {
+    resize: none;
+}
+
 .content {
     font-size: 24px;
 }
@@ -139,7 +152,7 @@ h2 {
     justify-content: center;
 }
 
-.login-form, .signup-form, .create-post {
+.login-form, .signup-form, .create-form {
     border-style: solid;
     border-width: 10px;
     border-color: var(--secondary);
@@ -170,11 +183,11 @@ h4 {
     padding-bottom: 5px;
 }
 
-.username, .password, .account-management, .email {
+.username, .email, .password, .account-management {
     padding: 20px;
 }
 
-.username-text, .password-text, .email-text {
+.username-text, .email-text, .password-text {
     height: 40px;
     width: 300px;
     font-family: "Roboto", sans-serif;
@@ -199,11 +212,11 @@ h4 {
     display: grid;
 }
 
-.username, .password, .account-management, .email {
+.username, .password, .account-management {
     padding: 20px;
 }
 
-.username-text, .password-text, .email-text {
+.username-text, .password-text {
     height: 40px;
     width: 300px;
     font-family: "Roboto", sans-serif;
@@ -225,7 +238,7 @@ h4 {
 
 /* Dashboard CSS */
 
-.create-post {
+.create-form {
     display: grid;
     border-style: solid;
     border-width: 10px;
