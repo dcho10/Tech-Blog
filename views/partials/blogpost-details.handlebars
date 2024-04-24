@@ -1,10 +1,10 @@
 <section class="display-blogpost">
     <section class="title">
-        <h2> {{title}} </h2>
+        <h2><a href="/blogpost/{{id}}" class="blogpost-title"> {{title}} </a></h2>
         <p> Created by {{user.username}} on {{format_date date_created}} </p>
     </section>
     <section class="content">
-        <p class="content-text"> {{comment}} </p>
+        <p class="content-text"> {{post}} </p>
         {{#if loggedIn}}
             <section class="comment-section">
                 <textarea class="comment-text"></textarea>

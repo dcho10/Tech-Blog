@@ -15,7 +15,7 @@ BlogPost.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        blogpost: {
+        post: {
             type: DataTypes.STRING,
         },
         date_created: {
@@ -35,7 +35,7 @@ BlogPost.init(
         sequelize,
         timestamps: false,
         freezeTableName: true,
-        undersored: true,
+        underscored: true,
         modelName: "blogpost"
     }
 );

@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const { User, BlogPost } = require("../models");
-const withAuth = require("../utils/auth");
 
 // home should display blogposts
 // successful login will redirect to dashboard
@@ -52,6 +51,31 @@ router.get("/create", async (req, res) => {
 
 router.get("/signup", (req, res) => {
     res.render("signup");
+})
+
+router.get("/blogpost/:id", async (req, res) => {
+    try {
+        const blogPostData = await BlogPost.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User,
+                    attributes: ["username"],
+                },
+            ]
+        });
+
+        const blogPost = blogPostData.get({ plain: true });
+        console.log(blogPostData)
+
+        res.render("blogpost", {
+            blogPost,
+            user_id: req.session.user_id,
+            username: req.session.username,
+            loggedIn: req.session.loggedIn
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
 })
 
 router.get("/login", (req, res) => {

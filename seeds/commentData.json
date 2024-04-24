@@ -1,14 +1,18 @@
 [
     {
-        "comment": "OMG yes! Tell me more! 🤩"
+        "comment": "OMG yes! Tell me more! 🤩",
+        "blogpost_id": 3
     },
     {
-        "comment": "I agree! 👍"
+        "comment": "I agree! 👍",
+        "blogpost_id": 1
     },
     {
-        "comment": "I don't enjoy it. 😠"
+        "comment": "I don't enjoy it. 😠",
+        "blogpost_id": 2
     },
     {
-        "comment": "It's so fun!"
+        "comment": "It's so fun!",
+        "blogpost_id": 4
     }
 ]

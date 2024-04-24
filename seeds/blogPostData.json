@@ -1,18 +1,18 @@
 [
     {
         "title": "I love working with HTML!",
-        "comment": "I love creating webpages using HTML!"
+        "post": "I love creating webpages using HTML!"
     },
     {
         "title": "CSS is the best!",
-        "comment": "I love designing webpages using CSS!"
+        "post": "I love designing webpages using CSS!"
     },
     {
         "title": "JavaScript is so much fun!",
-        "comment": "I love the interactivity using JavaScript!"
+        "post": "I love the interactivity using JavaScript!"
     },
     {
         "title": "I love coding!",
-        "comment": "Coding is so much fun!"
+        "post": "Coding is so much fun!"
     }
 ]

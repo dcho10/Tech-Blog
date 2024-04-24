@@ -6,12 +6,16 @@ router.post("/", async (req, res) => {
     try {
         const dbUserData = await User.create({
             username: req.body.username,
+            email: req.body.email,
             password: req.body.password,
         });
 
         req.session.save(() => {
+            req.session.user_id = dbUserData.id;
+            req.session.username = dbUserData.username;
             req.session.loggedIn = true;
-            res.render("dashboard");
+            
+            res.status(200).json(dbUserData);
         });
     } catch (err) {
         console.log(err);
@@ -40,41 +44,17 @@ router.post("/login", async (req, res) => {
         }
 
         req.session.save(() => {
+            req.session.user_id = dbUserData.id;
+            req.session.username = db.UserData.username;
             req.session.loggedIn = true;
-            res.render("dashboard");
+
+            res.json({ user: dbUserData, message: "Successfully logged in." })
         });
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
     }
 });
-
-router.post("/create", async (req, res) => {
-    try {
-        const blogPostData = await BlogPost.create({
-            title: req.body.title,
-            comment: req.body.title,
-            user_id: req.session.user_id
-        });
-
-        const blogPostDataAll = await BlogPost.findAll({
-            where: {
-                user_id: req.session.user_id
-            },
-            include: {
-                model: User,
-                attributes: ["username"]
-            }
-        });
-
-        const blogPosts = blogPostDataAll.map((blogPost) => blogPost.get({ plain: true }));
-        res.direct("/dashboard");
-
-    } catch (err) {
-        console.log(err);
-        res.status(500).json(err);
-    }
-})
 
 router.post("/logout", (req, res) => {
     if (req.session.loggedIn) {

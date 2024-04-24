@@ -1,18 +1,22 @@
 [
     {
         "username": "DavidCho10",
+        "email": "davidcho10@gmail.com",
         "password": "daviddavid"
     },
     {
         "username": "KDTrey5",
+        "email": "kdtrey5@gmail.com",
         "password": "TestPassword"
     },
     {
         "username": "KingJames",
+        "email": "kingjames@gmail.com",
         "password": "PasswordTesting1"
     },
     {
         "username": "StephenCurry30",
+        "email": "stephencurry30@gmail.com",
         "password": "AltPasswordTest"
     }
 ]
