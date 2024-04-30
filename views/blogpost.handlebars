@@ -1,17 +1,12 @@
-<section>
+<section >
 {{> blogpost-details blogPost}}
 <section class="display-comments">
-    <h4> Comments </h4>
-    <ul>
-        {{#each comment}}
-            <li>
-                <strong>{{username}}</strong>: {{comment}}
-            </li>
-        {{/each}}
-    </ul>
+{{> comment-details blogPost}}
+
 </section>
-<section class="comment-section">
-    <textarea class="comment-text"></textarea>
+<form class="comment-form">
+    <textarea class="comment-text" id="add-comment"></textarea>
     <button type="button" class="add-comment-btn"> Add Comment </button>
 </section>
-</section>
+</form>
+

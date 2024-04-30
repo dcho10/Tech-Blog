@@ -1,0 +1,14 @@
+<section class="view-comments">
+<h3 class="comments-title"> Comments</h3>
+    <section class="commenter">
+        {{#each comments as |comment|}}
+        <p> By: {{comment.user.username}}</p>
+        <p> Created on {{format_date comment.date_created}} </p>
+        {{/each}}
+    </section>
+
+    {{#each comments as |comment|}}
+        <p class="comment-content">{{comment.comment}}</p>
+    {{/each}}
+</section>
+

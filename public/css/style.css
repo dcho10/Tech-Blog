@@ -89,6 +89,26 @@ body {
     font-size: 24px;
 }
 
+.view-comments {
+    margin: 20px;
+}
+
+.comments-title {
+    background-color: var(--primary);
+    border-style: solid;
+}
+
+.comment-content {
+    font-size: 24px;
+}
+
+.commenter {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    color: var(--secondary);
+}
+
 .blogpost-title {
     font-family: "Press Start 2P", system-ui;
     font-size: 28px;
@@ -130,12 +150,12 @@ textarea {
     font-size: 24px;
 }
 
-.comment-section {
+.comment-form {
     display: grid;
 }
 
 .comment-text {
-    height: 100px;
+    height: 150px;
     margin: 10px 20px 10px 20px;
     font-size: 20px;
 }
