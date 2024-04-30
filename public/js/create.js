@@ -5,7 +5,7 @@ const createForm = async (event) => {
     const post = document.querySelector("#add-post").value;
 
     if (title && post) {
-        const response = await fetch("api/users", {
+        const response = await fetch("/api/blogpost/create", {
             method: "POST",
             body: JSON.stringify({ title, post }),
             headers: { "Content-Type" : "application/json" },

@@ -2,13 +2,13 @@
 <h3 class="comments-title"> Comments</h3>
     <section class="commenter">
         {{#each comments as |comment|}}
-        <p> By: {{comment.user.username}}</p>
-        <p> Created on {{format_date comment.date_created}} </p>
+        <section class="commenter-info">
+            <p><strong> By: </strong>{{comment.user.username}}</p>
+            <p><strong> Created on: </strong>{{format_date comment.date_created}} </p>
+        </section>
+        <p class="comment-content">{{comment.comment}}</p>
         {{/each}}
+        </section>
     </section>
 
-    {{#each comments as |comment|}}
-        <p class="comment-content">{{comment.comment}}</p>
-    {{/each}}
 </section>
-

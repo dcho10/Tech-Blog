@@ -103,10 +103,18 @@ body {
 }
 
 .commenter {
+    display: grid;
+}
+
+.commenter-info {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0 15px 0;
     color: var(--secondary);
+    padding: 15px;
+    margin: 15px 0 15px 0;
+    border: solid;
+    border-color: var(--tertiary);
+
 }
 
 .blogpost-title {
