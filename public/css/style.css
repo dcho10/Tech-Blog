@@ -168,6 +168,11 @@ textarea {
     display: grid;
 }
 
+.not-logged-in {
+    display: flex;
+    justify-content: center;
+}
+
 .comment-text {
     height: 150px;
     margin: 10px 20px 10px 20px;

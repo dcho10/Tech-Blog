@@ -1,12 +1,5 @@
 const router = require("express").Router();
 const { User, BlogPost, Comment } = require("../models");
-const withAuth = require("../utils/auth")
-
-// home should display blogposts
-// successful login will redirect to dashboard
-// clicking on blogpost should allow user to comment on blogpost
-// dashboard should be able to let you view, create, update, delete post
-// blogpost should be added to homepage
 
 router.get("/", async (req, res,) => {
     try {
@@ -44,7 +37,12 @@ router.get("/home", async (req, res) => {
     }
 })
 
-router.get("/dashboard", withAuth, async (req, res) => {
+router.get("/dashboard", async (req, res) => {
+    if (!req.session.loggedIn) {
+        res.redirect("/login");
+        return;
+    }
+
     try {
         const blogPostData = await BlogPost.findAll({
             include: {
