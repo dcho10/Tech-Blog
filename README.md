@@ -4,12 +4,12 @@ https://github.com/dcho10/Tech-Blog
 
 ## Images of Application
 
-Homepage: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/f5c454dc-2c0b-4aa9-845d-d288704d9d1c)
-Signup: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/79d7ad28-81fb-4cc3-ba5b-f7f4f6797de2)
-Login: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/5f82a337-35b9-4e7b-961d-3c3c756290fa)
-Dashboard: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/04ceb81c-a024-4c72-9f56-155f6720bcff)
-Create A Post: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/da9bce67-6b00-4bd7-ad08-b67b3dbf8589)
-Comment Section: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/57d7de02-5873-434a-ae1f-42b0efccc9cb)
+# Homepage: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/f5c454dc-2c0b-4aa9-845d-d288704d9d1c)
+# Signup: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/79d7ad28-81fb-4cc3-ba5b-f7f4f6797de2)
+# Login: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/5f82a337-35b9-4e7b-961d-3c3c756290fa)
+# Dashboard: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/04ceb81c-a024-4c72-9f56-155f6720bcff)
+# Create A Post: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/da9bce67-6b00-4bd7-ad08-b67b3dbf8589)
+# Comment Section: ![image](https://github.com/dcho10/Tech-Blog/assets/153252185/57d7de02-5873-434a-ae1f-42b0efccc9cb)
 
 ## Description
   
