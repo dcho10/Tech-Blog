@@ -1,10 +1,13 @@
+// Set up sequelize connection and models
 const sequelize = require("../config/connection");
 const { User, BlogPost, Comment } = require("../models");
 
+// Require seeds
 const userData = require("./userData.json");
 const blogPostData = require("./blogPostData.json");
 const commentData = require("./commentData.json");
 
+// Seeds database with values
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 

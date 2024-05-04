@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { User } = require("../../models");
 
-// Create a user
+// This router allows the user to create an account using the POST method, user must provide a username, email, and password in order to create an account, once all the information has been logged, it will be saved in the session
 router.post("/", async (req, res) => {
     try {
         const dbUserData = await User.create({
@@ -23,6 +23,7 @@ router.post("/", async (req, res) => {
     }
 });
 
+// This router allows the user to login using the POST method, once the user provides their username, it will search the database to find the userwith that username, if the username or password is wrong, it will generate the error message. If the user successfully logs in, the session will save the user ID, their username, and get redirected to their dashboard
 router.post("/login", async (req, res) => {
     try {
         const dbUserData = await User.findOne({
@@ -55,6 +56,7 @@ router.post("/login", async (req, res) => {
     }
 });
 
+// This router allows the user to logout using the POST method
 router.post("/logout", (req, res) => {
     if (req.session.loggedIn) {
         req.session.destroy(() => {

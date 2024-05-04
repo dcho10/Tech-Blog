@@ -2,6 +2,7 @@ const User = require("./User");
 const BlogPost = require("./BlogPost");
 const Comment = require("./Comment");
 
+// Establish foreign key relationships
 User.hasMany(BlogPost, {
     foreignKey: "user_id",
 });

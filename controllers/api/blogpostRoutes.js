@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { BlogPost, Comment } = require("../../models");
 
+// This router allows te user to add a comment using the POST method
 router.post("/blogpost/:id", async (req, res) => {
     try {
         const commentData = await Comment.create({
@@ -16,6 +17,7 @@ router.post("/blogpost/:id", async (req, res) => {
     }
 });
 
+// This router allows the user to create an account using the POST method
 router.post("/create", async (req, res) => {
     try {
         const blogPostData = await BlogPost.create({
@@ -31,6 +33,7 @@ router.post("/create", async (req, res) => {
     }
 })
 
+// This router allows the user to edit their post using the PUT method
 router.put("/edit/:id", async (req, res) => {
     try {
         const updatePost = await BlogPost.update({
@@ -49,6 +52,7 @@ router.put("/edit/:id", async (req, res) => {
     }
 })
 
+// This router allows the user to delete a post of their choosing using the DELETE method
 router.delete("/:id", async (req, res) => {
     
     try {

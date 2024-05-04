@@ -1,3 +1,5 @@
+// Set up sequelize connection to databaase
+
 const Sequelize = require("sequelize");
 require("dotenv").config();
 
