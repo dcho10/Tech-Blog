@@ -3,8 +3,8 @@
     <section class="commenter">
         {{#each comments as |comment|}}
         <section class="commenter-info">
-            <p><strong> By: </strong>{{comment.user.username}}</p>
-            <p><strong> Created on: </strong>{{format_date comment.date_created}} </p>
+            <p><strong>{{comment.user.username}}</strong></p>
+            <p><strong> Posted: </strong>{{format_date comment.date_created}} </p>
         </section>
         <p class="comment-content">{{comment.comment}}</p>
         {{/each}}

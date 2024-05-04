@@ -1,4 +1,10 @@
-<section class="new-post">
-    <button type="button" class="new-post-btn" onclick="window.location.href='/create'"> New Post </button>
+<section>
+<h3> Your Posts </h3>
+{{#each blogPosts as |blogPost|}}
+{{> dashboard-details}}
+{{/each}}
+    <section class="new-post">
+        <button type="button" class="new-post-btn" onclick="window.location.href='/create'"> New Post </button>
+    </section>
 </section>
 
