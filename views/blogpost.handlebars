@@ -3,10 +3,12 @@
 <section class="display-comments">
 {{> comment-details blogPost}}
 </section>
+{{#if loggedIn}}
 <form class="comment-form">
     <textarea class="comment-text" id="add-comment"></textarea>
     <button type="submit" class="add-comment-btn"> Add Comment </button>
 </section>
 </form>
+{{/if}}
 
 <script src="/js/comment.js"></script>
