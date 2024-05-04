@@ -31,6 +31,7 @@ Some challenges I experienced include: Figuring out the routing for different pa
 ## Installation
 
   Users will need to install the following:
+  
     * "bcrypt": "^5.0.0",
     * "connect-session-sequelize": "^7.0.4",
     * "dotenv": "^8.2.0",
@@ -55,7 +56,7 @@ Some challenges I experienced include: Figuring out the routing for different pa
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
-  }
+    }
 
   Once that has been copy and pasted, user would have to create a server.js file, open the server.js file in the integrated terminal (right-click the server.js file, then select open in an integrated terminal), and lastly run npm i to install all the packages at once. Once user has installed all the packages successfully, they will have access to all of the packages.
 
