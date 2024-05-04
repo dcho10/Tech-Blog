@@ -59,7 +59,13 @@ a {
     font-size: 34px;
 }
 
-.login-btn:hover, a:hover, .logout-btn:hover, .login-button:hover, .signup-button:hover, .edit-btn:hover, .delete-btn:hover, .new-post-btn:hover, .add-post-btn:hover, .add-comment-btn:hover {
+a:hover, .login-button:hover, .signup-button:hover, .edit-btn:hover, .delete-btn:hover, .new-post-btn:hover, .add-post-btn:hover, .add-comment-btn:hover {
+    cursor: pointer;
+    color: var(--secondary);
+    scale: 1.05;
+}
+
+.login-btn:hover, .logout-btn:hover {
     cursor: pointer;
     color: var(--secondary);
 }
@@ -229,6 +235,7 @@ h4 {
 
 .reset:hover, .signup:hover {
     color: var(--secondary);
+    scale: 1.05;
 }
 
 .account-management {

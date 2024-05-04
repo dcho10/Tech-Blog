@@ -1,10 +1,19 @@
 <section>
 <h3> Your Posts </h3>
 {{#each blogPosts as |blogPost|}}
-{{> dashboard-details}}
+<section class="display-blogpost">
+    <section class="title">
+        <h2><a href="/blogpost/{{id}}" class="blogpost-title"> {{title}} </a></h2>
+        <section class="edit-delete">
+            <button type="button" class="edit-btn" onclick="window.location.href='/edit/{{id}}'"> Edit </button>
+            <button type="button" class="delete-btn" data-id="{{id}}"> Delete </button>
+        </section>
+    </section>
+</section>
 {{/each}}
     <section class="new-post">
         <button type="button" class="new-post-btn" onclick="window.location.href='/create'"> New Post </button>
     </section>
 </section>
 
+<script src="/js/delete.js"></script>
