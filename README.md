@@ -1,6 +1,7 @@
 # Tech-Blog
 
-https://github.com/dcho10/Tech-Blog
+### Repository: https://github.com/dcho10/Tech-Blog
+### Live application: https://david-tech-blog-e2d4633ea949.herokuapp.com/
 
 ## Images of Application
 
